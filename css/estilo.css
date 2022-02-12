@@ -54,12 +54,12 @@ main section#video article h1 { font-weight: bold; font-size: 3em; line-height: 
 main section#video article p { font-weight: 500; font-size: 1.5em; line-height: 1.3em; text-align: center; padding: 0 25%; }
 
 @keyframes anima-flecha-abajo {
-    0% { margin: 27vh auto 0 auto; }
-    50% { margin: 30vh auto 0 auto; }
-    100% { margin: 27vh auto 0 auto; }
+    0% { transform: translateY(0); }
+    50% { transform: translateY(20px); }
+    100% { transform: translateY(0); }
 }
 
-main section#video article a { width: 42px; height: 40px; display: block; margin: 27vh auto 0 auto; float: none; position: relative; transition: all 0.3s ease-out; animation-name: anima-flecha-abajo; animation-duration: 3s; animation-play-state: running; animation-direction: normal; animation-iteration-count: infinite; animation-timing-function: ease-out; }
+main section#video article a { width: 42px; height: 40px; display: block; margin: 27vh auto 0 auto; float: none; position: relative; transform: translateY(0); transition: all 0.3s ease-out; animation-name: anima-flecha-abajo; animation-duration: 3s; animation-play-state: running; animation-direction: normal; animation-iteration-count: infinite; animation-timing-function: ease-out; }
 main section#video article a img { width: 100%; height: auto; display: block; }
 main section#video article a:hover { opacity: 0.5; transition: all 0.3s ease-out; }
 
@@ -84,7 +84,7 @@ main section#presentacion article a:hover { background: #9D9D9D; transition: all
 main section#portafolio { width: 100%; height: auto; position: relative; margin: 0 auto; float: none; background: #fff; }
 
 main section#portafolio article { width: 100%; height: auto; position: relative; margin: 0 auto; float: none; }
-main section#portafolio article h2 { font-weight: bold; font-size: 2em; line-height: 1.2em; padding: 86px 25% 24px 25%; text-align: center; }
+main section#portafolio article h2 { font-weight: 900; font-size: 1.5em; line-height: 1.2em; padding: 86px 25% 24px 25%; text-align: center; text-transform: uppercase; letter-spacing: 0.3em; }
 main section#portafolio article hr { width: 40%; height: 1px; position: relative; margin: 0 auto 24px; float: none; border: none; background: #999; opacity: 0.5; }
 main section#portafolio article p { font-weight: 500; font-size: 1.1em; line-height: 1.7em; padding: 0 25% 86px 25%; text-align: center; }
 
@@ -109,20 +109,55 @@ main section#portafolio nav a#proyecto-08 { background: url('../img/portafolio-0
            
 
 /* Section ESTUDIO */
-main section#estudios { width: 100%; height: 823px; position: relative; margin: 0 auto; float: none; background: #AFA9A9; }
+main section#estudios { width: 100%; height: 780px; position: relative; margin: 0 auto; float: none; background: #fff; }
+main section#estudios article { width: 1100px; height: 585px; position: relative; margin: 0 auto; float: none; top: 96px; }
+
+main section#estudios article figure { width: 448px; height: 585px; position: relative; margin: 0 80px 0 0; float: left; }
+main section#estudios article figure img { width: 100%; height: auto; display: block; }
+
+main section#estudios article div#info-estudios { width: 570px; height: 585px; position: relative; margin: 0; float: left; background: #ccc; }
+main section#estudios article div#info-estudios h2 {  }
+main section#estudios article div#info-estudios h4 {  }
+main section#estudios article div#info-estudios p {  }
+
+
 
 
 /* Section ESTUDIO */
-main section#habilidades { width: 100%; height: 706px; position: relative; margin: 0 auto; float: none; background: #949494; }
+main section#habilidades { width: 100%; height: auto; position: relative; margin: 0 auto; float: none; background: #f1f1f1; padding: 0 0 86px 0; }
+main section#habilidades h2 { font-weight: 900; font-size: 1.5em; line-height: 1.2em; padding: 86px 25% 48px 25%; text-align: center; text-transform: uppercase; letter-spacing: 0.3em; }
+main section#habilidades article { width: 1100px; height: auto; position: relative; margin: 0 auto; float: none; }
+main section#habilidades article div.box-habil { width: 254px; height: 236px; position: relative; margin: 9px; float: none; display: inline-block; background: #fff; }
+main section#habilidades article div.box-habil i { width: 70px; height: auto; font-size: 3em; text-align: center; display: block; margin: 48px auto 16px; padding: 11px 0; float: none; border: solid 1px #999; border-radius: 50%; }
+main section#habilidades article div.box-habil h5 {  }
+
+main section#habilidades article div.box-habil:nth-child(1) i { color: #09f; }
+main section#habilidades article div.box-habil:nth-child(2) i { color: #09f; }
+main section#habilidades article div.box-habil:nth-child(3) i { color: #09f; }
+main section#habilidades article div.box-habil:nth-child(4) i { color: #09f; }
+main section#habilidades article div.box-habil:nth-child(5) i { color: #e100ff; }
+main section#habilidades article div.box-habil:nth-child(6) i { color: #e5ff00; }
+main section#habilidades article div.box-habil:nth-child(7) i { color: #073350; }
+main section#habilidades article div.box-habil:nth-child(8) i { color: #f90; }
+                        
 
 
 /* Section ESTUDIO */
-main section#contacto { width: 100%; height: 674px; position: relative; margin: 0 auto; float: none; background: #C4C4C4; }
+main section#contacto { width: 100%; height: 500px; position: relative; margin: 0 auto; float: none; background: #fff; }
+main section#contacto article { width: 30%; height: 308px; position: relative; margin: 0; float: left; background: #fff; padding: 96px 0 96px 10%; }
+main section#contacto article div.box-contacto {  }
+main section#contacto article div.box-contacto p {  }
+main section#contacto article div.box-contacto a {  }
+main section#contacto article div.box-contacto a:hover {  }
+main section#contacto figure { width: 60%; height: 500px; position: relative; margin: 0; float: left; background: url('../img/contacto.jpg') no-repeat top center; background-size: cover; }
 
 
 
 /* Footer */
-footer { width: 100%; height: 470px; position: relative; margin: 0 auto; float: none; background: #9D9D9D; }
+footer { width: 100%; height: 200px; position: relative; margin: 0 auto; float: none; background: #fff; }
+footer a { width: 227px; height: 76px; display: block; position: relative; margin: 0 auto; float: none; top: 64px; transition: all 0.3s ease-out; }
+footer a img { width: 100%; height: auto; display: block; }
+footer a:hover { opacity: 0.7; transition: all 0.3s ease-out; }
 
 
 
@@ -138,11 +173,50 @@ Mobile: 340px hasta 499px
 @media only screen and (max-width: 1199px) {
     header { height: 70px; }
     header a { width: 144px; height: 48px; margin: 11px 0 11px 15px; }
+
+
+    main section#video { height: 90vh; background: url('../video/video-gif.gif') no-repeat top center; background-size: cover; }
+    main section#video video { height: 90vh; }
+    main section#video video source { height: 90vh; }
+    main section#video article { height: 90vh; }
+    main section#video article a { margin: 12vh auto 0 auto; width: 30px; }
+
+
+    main section#presentacion { height: auto; }
+    main section#presentacion figure { width: 100%; height: 400px; margin: 0 auto; float: none; }
+    main section#presentacion article { width: 100%; height: auto; margin: 0 auto; float: none; padding: 0 0 72px 0; }
+
+
+    main section#portafolio article h2 { padding: 86px 10% 24px 10%; }
+    main section#portafolio article hr { width: 80%; }
+    main section#portafolio article p { padding: 0 10% 86px 10%; }
+
+
+    main section#portafolio nav { height: 1000px; }
+    main section#portafolio nav a { width: 50%; height: 250px; }
+}
+
+@media only screen and (max-width: 879px) {
+    main section#video { height: 70vh; }
+    main section#video video { display: none; }
+    main section#video article { height: 70vh; }
+    main section#video article h1 { font-size: 2.5em; padding: 22vh 0 28px 0; }
+    main section#video article p { font-size: 1.15em; padding: 0 10%; }
 }
 
 /* Mobile */
 @media only screen and (max-width: 499px) {
-    
+    main section#presentacion figure { height: 250px; }
+    main section#presentacion article { width: 90%; }
+    main section#presentacion article h2 { font-size: 1.25em; line-height: 1.35em; padding: 72px 0 16px 0; }
+    main section#presentacion article p { font-size: 0.9em; padding: 16px 0 16px 0; }
+
+    main section#portafolio article { width: 90%; }
+    main section#portafolio article h2 { font-size: 1.25em; line-height: 1.35em; padding: 48px 0 24px 0; }
+    main section#portafolio article p { font-size: 0.9em; padding: 0 0 48px 0; }
+
+    main section#portafolio nav { height: auto; }
+    main section#portafolio nav a { width: 100%; height: 200px; margin: 0 auto; float: none; }
 }
 
 @media only screen and (max-width: 399px) {
