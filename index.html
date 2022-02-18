@@ -6,7 +6,10 @@
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+        <!-- Estilo Global -->
         <link rel="stylesheet" href="css/estilo.css">
+        <!-- Estilo específico de página -->
+        <link rel="stylesheet" href="css/inicio.css">
 
         <!-- Librerías de Apoyo: PrefixFree, FontAwesome y Google Fonts -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
@@ -28,11 +31,11 @@
             </a>
 
             <nav>
-                <a href="#" id="link-presentacion">Presentación</a>
-                <a href="#" id="link-portafolio">Portafolio</a>
-                <a href="#" id="link-estudios">Estudios</a>
-                <a href="#" id="link-habilidades">Habilidades</a>
-                <a href="#" id="link-contacto">Contacto</a>
+                <a href="#present" class="link-scroll">Presentación</a>
+                <a href="#portaf" class="link-scroll">Portafolio</a>
+                <a href="#estud" class="link-scroll">Estudios</a>
+                <a href="#habilid" class="link-scroll">Habilidades</a>
+                <a href="#conta" class="link-scroll">Contacto</a>
             </nav>
         </aside>
 
@@ -44,7 +47,7 @@
         </aside>
 
 
-        <header>
+        <header class="transparente">
             <a href="index.html">
                 <img src="img/logo.png">
             </a>
@@ -59,7 +62,7 @@
                 <article>
                     <h1>Lorem Ipsum</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non eleifend velit, non laoreet nisl.</p>
-                    <a href="#">
+                    <a href="#portaf" id="to-portaf">
                         <img src="img/abajo.svg">
                     </a>
                 </article>
@@ -67,7 +70,10 @@
             
 
             <section id="presentacion">
-                <figure></figure>
+                <div id="present"></div>
+                <figure>
+                    <a href="img/presentacion-full.jpg" data-fancybox="galeria" data-caption="Albero Angulo - Desarrollador Web"></a>
+                </figure>
                 <article>
                     <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
                     <p>Nulla suscipit magna quis urna bibendum molestie. Etiam ante lorem, tempus accumsan ornare in, tincidunt in ex. Sed eu leo mattis, porta sem id, tristique felis.</p>
@@ -80,6 +86,7 @@
             
 
             <section id="portafolio">
+                <div id="portaf"></div>
                 <article>
                     <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
                     <hr>
@@ -99,7 +106,7 @@
                     <a href="#" target="_blank" id="proyecto-04">
                         <strong>Nombre descriptivo del proyecto</strong>
                     </a>
-                    <a href="#" target="_blank" id="proyecto-05">
+                    <a href="img/portafolio-05-full.jpg" id="proyecto-05" data-fancybox="galeria">
                         <strong>Nombre descriptivo del proyecto</strong>
                     </a>
                     <a href="#" target="_blank" id="proyecto-06">
@@ -114,8 +121,9 @@
                 </nav>
             </section>
             
-
+            <!--
             <section id="estudios">
+                <div id="estud"></div>
                 <article>
                     <figure>
                         <img src="img/estudios.jpg">
@@ -131,6 +139,7 @@
             
 
             <section id="habilidades">
+                <div id="habilid"></div>
                 <h2>Habilidades</h2>
 
                 <article>
@@ -171,6 +180,7 @@
             
 
             <section id="contacto">
+                <div id="conta"></div>
                 <article>
                     <div class="box-contacto">
                         <p>Correo electrónico</p>
@@ -189,7 +199,7 @@
                     </div>
                 </article>
                 <figure></figure>
-            </section>
+            </section> -->
         </main>
 
 
